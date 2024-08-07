@@ -2,6 +2,7 @@
     margin: 0px;
     padding: 0px;
     text-align: center;
+    justify-content: center;
 }
 
 body {
@@ -155,7 +156,7 @@ nav img {
     background-color: rgb(73, 65, 65);
 }
 
-@media screen and (max-width:370px) {
+@media screen and (max-width:430px) {
     .e_box #int {
         height: 35px;
         width: 250px;
@@ -206,17 +207,17 @@ nav img {
     width: 35vw;
 }
 
-.s_box h1 {
+.s_box span h1 {
     font-weight: 800;
     font-size: 45px;
 }
 
-.s_box h2 {
+.s_box span h2 {
     padding-top: 15px;
     font-size: 23px;
 }
 
-section {
+.s_box section {
     position: relative;
 }
 
@@ -231,20 +232,6 @@ section video {
     right: 40px;
     position: absolute;
     max-width: 330px;
-}
-@media screen and (max-width:550px) {
-    .s_box h1 {
-        font-size: 30px;
-    }
-
-    .s_box h2 {
-        padding-top: 15px;
-        font-size: 17px;
-    }
-
-    section {
-        margin-bottom: 100px;
-    }
 }
 
 /* ------------------------------third box-----------------------------------------*/
@@ -263,39 +250,14 @@ section video {
     width: 38vw;
 }
 
-.t_box h1 {
+.t_box span h1 {
     font-weight: 800;
     font-size: 45px;
 }
 
-.t_box h2 {
+.t_box span h2 {
     padding-top: 15px;
     font-size: 23px;
-}
-
-@media screen and (max-width:1050px) {
-    .t_box {
-        height: 80vh;
-        padding-right: 0px;
-        flex-wrap: wrap;
-
-    }
-
-    .t_box section {
-        margin-top: 50px;
-    }
-}
-
-@media screen and (max-width:560px) {
-    .t_box h1 {
-        font-weight: 800;
-        font-size: 28px;
-    }
-
-    .t_box h2 {
-        padding-top: 15px;
-        font-size: 16px;
-    }
 }
 
 /*---------------------------------------fouth box------------------------------------ */
@@ -324,6 +286,10 @@ section video {
     font-size: 23px;
 }
 
+.fr_box section {
+    position: relative;
+}
+
 .fr_box section img {
     max-width: 400px;
     z-index: 10;
@@ -337,17 +303,7 @@ section video {
     width: 257px;
 }
 
-@media screen and (max-width:370px) {
-    .fr_box h1 {
-        font-size: 35px;
-    }
 
-    .fr_box h2 {
-        padding-top: 15px;
-        font-size: 20px;
-    }
-
-}
 
 /*---------------FAQ--------------- */
 .faq {
@@ -404,14 +360,49 @@ section video {
 
 @media screen and (max-width:1000px) {
     .s_box {
-        height: 80vh;
+        height: 90vh;
         padding-right: 50px;
         flex-wrap: wrap;
     }
 
-    section {
-        margin-top: -200px;
+    s_box span {
+        width: 40vw;
     }
+
+    .s_box h1 {
+        font-size: 40px;
+    }
+
+    .s_box h2 {
+        padding-top: 15px;
+        font-size: 20px;
+    }
+
+    section {
+        margin-bottom: 0px;
+    }
+
+    .t_box {
+        height: 80vh;
+        padding-right: 0px;
+        flex-wrap: wrap;
+
+    }
+
+    .t_box section {
+        margin-top: 0px;
+    }
+
+    .t_box h1 {
+        font-weight: 800;
+        font-size: 28px;
+    }
+
+    .t_box h2 {
+        padding-top: 15px;
+        font-size: 16px;
+    }
+
     .fr_box {
         height: 80vh;
         padding-right: 0px;
@@ -424,7 +415,7 @@ section video {
 
     .faq {
 
-        height: 60vh;
+        height: 80vh;
         flex-wrap: wrap;
     }
 
@@ -435,6 +426,8 @@ section video {
     }
 
     #faq_box {
+        margin-top: 0px;
+        margin-bottom: 0px;
         height: 30px;
         flex-wrap: wrap;
 
@@ -474,7 +467,7 @@ footer {
 @media screen and (max-width:850px) {
     footer {
 
-        height: 100vh;
+        height: 90vh;
     }
 
     .que {
@@ -494,9 +487,72 @@ footer {
 }
 
 @media screen and (max-width:520px) {
-    .ft {
+    .fr_box h1 {
+        font-size: 22px;
+    }
 
-        grid-template-columns: 1fr;
+    .fr_box h2 {
+        padding-top: 15px;
+        font-size: 14px;
+    }
+
+    .fr_box section {
+        margin-bottom: 0px;
+        margin: auto;
+    }
+
+    .s_box span h1 {
+        font-size: 22px;
+    }
+
+    .s_box span h2 {
+        padding-top: 15px;
+        font-size: 14px;
+    }
+
+    section {
+        /* margin-bottom: 0px;
+        margin-left: 50px; */
+        margin: auto;
+    }
+
+    .t_box {
+        height: 90vh;
+
+    }
+
+    .t_box span h1 {
+        font-size: 18px;
+    }
+
+    .t_box span h2 {
+        padding-top: 15px;
+        font-size: 12px;
+    }
+
+    .ft {
+        padding: 5px 50px;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+
+    }
+
+    section {
+        margin-left: 50px;
+        margin-bottom: 100px;
+    }
+
+    #faq_box {
+        margin-top: 0px;
+        margin-bottom: 0px;
+        height: 30px;
+        flex-wrap: wrap;
+        font-size: 20px;
+
+    }
+
+    .faq h1 {
+        font-size: 25px;
 
     }
 }
